@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons8-form-48.png"
+      type="image/x-icon"
+    />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <h2>Please Fill The Form</h2>
+    <form action="">
+      <fieldset>
+        <legend>Tour Registration Form</legend>
+
+        <div class="input">
+          <label for="">Enter Your Name</label>
+          <br />
+          <input
+            placeholder="Enter Your Professional Name"
+            type="text"
+            name="name"
+            minlength="5"
+            maxlength="20"
+            id="input-name"
+            size="40"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div class="input">
+          <label for="">Enter Your Official Email</label>
+          <br />
+          <input
+            placeholder="Enter Your Official Email"
+            type="email"
+            name="email"
+            id="input-email"
+            size="40"
+          />
+        </div>
+        <br />
+
+        <div class="input">
+          <label for="">Enter Your Company Name</label>
+          <br />
+          <input
+            placeholder="Enter Your Company"
+            type="text"
+            name="company"
+            id="input-company"
+            size="40"
+            value="AR Telecommunication"
+            readonly
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Choose Your Favourite Color</label>
+          <br />
+          <input type="color" name="color" id="input-color" size="40" />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Enter Your Birthday</label>
+          <br />
+          <input
+            min="2002-06-03"
+            type="date"
+            name="birthday"
+            id="input-birthday"
+            required
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Enter Your Joining Date</label>
+          <br />
+          <input
+            type="datetime-local"
+            name="joining"
+            id="input-joining"
+            required
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Upload Your Photo</label>
+          <br />
+          <input type="file" name="photo" id="input-photo" required multiple />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Enter a Secret Password</label>
+          <br />
+          <input type="password" name="password" id="input-password" required />
+        </div>
+        <br />
+        <div>
+          <label>Enter Your Gender</label> <br />
+          <input type="radio" name="gender" id="" value="Male" /> Male
+          <input type="radio" name="gender" id="" value="Female" /> Female
+          <input type="radio" name="gender" id="" value="Others" /> Others
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Enter Your Age</label>
+          <br />
+          <input
+            min="18"
+            max="40"
+            type="number"
+            name="age"
+            id="input-age"
+            required
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Select Your Difficulty Level</label>
+        <select name="" id="">
+          <option value="" selected>Easy</option>
+          <option value="">Medium</option>
+          <option value="">Hard</option>
+        </select>
+        </div>
+        <br>
+        <div>
+          <input type="submit" value="Register Now" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
